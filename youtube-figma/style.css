@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline:none;
+    border:none;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 100%;
+    height: auto; 
+}
+/* --------------------- <HEADER> -------------------------------*/
+header{
+    width: 100%;
+    height:65px;
+    display: flex;
+    justify-content: space-between;
+    background: #212121;
+    padding:0 10px 0 10px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+}
+.logo a{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo i{
+  font-size: 22px;
+  color: white;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+.search form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.search form input{
+    padding:8px;
+    width: 100%;
+    height: 40px;
+    background: #121212; 
+    color:white;
+    font-size: 16px;
+}
+.search form input::placeholder{
+    color:#aaa;
+}
+.search form button{
+    padding:0 25px;
+    height: 40px;
+    background: #303030;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search form button i{
+    font-size: 18px;
+    color: #fff;
+}
+.search .voice-search{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background: #000;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    margin-left: 10px;
+    cursor: pointer;
+    color:white;
+}
+.profile-customize{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.profile-customize a{
+  margin-left:7px;
+  margin-right: 7px;
+}
+.profile-customize a i{
+  font-size: 22px;
+  color:white;
+  cursor: pointer; 
+}
+.profile-customize a.profile-image{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-customize a.profile-image img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+/* --------------------- </HEADER> -------------------------------*/
+.flex-container{
+    display: flex;
+}
+/* --------------------- <ASIDE> -------------------------------*/
+aside{
+  min-width: 240px;
+  background: #212121;
+  border-right:1px solid rgba(211, 211, 211,0.2);
+  overflow-y:scroll;
+}
+aside ul li a{
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+    display:flex;
+    
+    align-items: center;
+    padding:10px 17px;
+}
+aside ul li a.liActive {
+    background: #303030;
+}
+aside ul li a:hover{
+    background: #303030;
+}
+aside ul li i{
+    font-size: 20px;
+    margin-right: 20px;
+}
+aside ul li h6{
+  padding:10px 17px;
+    font-size: 14px;
+    color: #aaa; 
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+aside ul li img{
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+    border-radius: 100%;
+}
+/* --------------------- </ASIDE> -------------------------------*/
+
+/* --------------------- <SECTION> -------------------------------*/
+
+/* width */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height:7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #212121;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+section{   
+  background: #121212;  
+  overflow:hidden;
+  width:100%;
+}
+section .tags{ 
+  width:100%;
+  background: #212121;
+  overflow-x:scroll;
+  border-top:1px solid rgba(211, 211, 211,0.2);
+  padding:21px 0 17px 0;
+}
+section .tags ul{
+    display: flex;
+}
+section .tags ul li{
+  margin-right:10px;
+  margin-left:10px;
+}
+section .tags ul li a{
+  white-space: nowrap;
+   display:flex;
+  border-radius: 16px;
+  background: #303030;
+  padding:6px 20px;
+  color:#fff;
+}
+section .tags ul li a:hover{
+    background: #A9A9A9;
+}
+section .slider img{
+    width: 100%;
+    height: 368px;
+    cursor: pointer;
+    object-fit: cover;
+}
+ul.videos{
+  display:flex;
+  margin:20px;
+  flex-wrap:wrap;
+}
+ul.videos li{
+  width:calc(25% - 20px);
+  margin-left:10px;
+  margin-right:10px;
+  margin-bottom:48px;
+}
+
+.video-image{
+  margin-bottom:12px;
+}
+.video-image,
+.video-image img{
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  cursor:pointer;
+  position: relative;
+}
+.video-image img{
+  object-fit: cover;
+}
+.video-wrapper{
+  display:flex;
+  padding-right:5px;
+}
+.channel-img{
+  margin-right:12px;
+  
+}
+
+.video-image span{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  z-index:1000;
+  color:#fff;
+  opacity: 0;
+  
+}
+.video-image::after{
+  position: absolute;
+  width: 100%;
+  height: 100%; 
+  content:'';
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.0);
+  transition: background-color .5s ease;
+}
+.video-image:hover span{
+  transition: opacity .5s ease-in-out;
+  opacity: 1;
+}
+.video-image:hover::after{
+  background-color: rgba(0,0,0,0.7);
+}
+.channel-img,
+.channel-img img{
+  border-radius:100%;
+  width: 36px;
+  height: 36px;
+}
+
+section .video-title a{
+  font-weight: bold;
+font-size: 12px;
+line-height:17px;
+display:flex;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom:6px;
+}
+
+.video-view-date,
+.channel-name a{
+  color:#aaa;
+  font-size: 12px;
+}
+
+
+/* --------------------- </SECTION> -------------------------------*/
